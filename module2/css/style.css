@@ -1,0 +1,125 @@
+* {
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+}
+#containerid-1,#containerid-2,#containerid-3{
+position: relative;
+top: 60px;
+padding-left: 8px;
+overflow: auto;
+}
+.p1 {
+    border: 2px black solid;
+    background-color: salmon;
+    position: relative;
+    left: 75%;
+    width: 25%;
+    font-family: monospace,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,serif;
+    text-align: center;
+    font-weight: bolder;
+    padding: 8px;
+}
+.p2 {
+    border: 1px black solid;
+    background-color: #d34949;
+    position: relative;
+    left: 75%;
+    width: 25%;
+    color: white;
+    font-family: monospace,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,serif;
+    text-align: center;
+    font-weight: bolder;
+    padding: 8px;
+}
+.p3 {
+    border: 1px black solid;
+    background-color: rgb(255, 212, 132);
+    position: relative;
+    left: 75%;
+    width: 25%;
+    font-family: monospace,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,serif;
+    text-align: center;
+    font-weight: bolder;
+    padding: 8px;
+}
+div {
+    font-family: monospace,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#container {
+    width: 100%;
+}
+/********** laptop **********/
+@media (min-width: 992px){
+    #containerid-1,#containerid-2,#containerid-3{ 
+        float: left;
+        border: 3px black solid;
+        margin-left: 11px;
+        background-color: #8c8c8c;
+        height: 250px;
+        
+    }
+    
+    #containerid-1{
+        width: 32%;
+    }
+    #containerid-2{
+        width: 32%;
+    }
+    #containerid-3{
+        width: 32%;
+    }
+}
+
+
+/********** tablet **********/
+
+@media (min-width: 768px) and (max-width: 991px){
+    #containerid-1,#containerid-2,#containerid-3{ 
+        float: left;
+        border: 3px black solid;
+        margin-left: 11px;
+        background-color: #8c8c8c;
+        margin-bottom: 15px;
+        height: 150px;
+
+    }
+    #containerid-1{
+        width: 48%;
+    }
+    #containerid-2{
+        width: 48%;
+    }
+    #containerid-3{
+        width: 97%;
+    }
+}
+
+/********** mobile **********/
+
+@media (max-width: 767px){
+    #containerid-1,#containerid-2,#containerid-3{ 
+        float: left;
+        border: 3px black solid;
+        margin-left: 11px;
+        background-color: #8c8c8c;
+        margin-bottom: 15px;
+        height: 150px;
+    }
+    #containerid-1{
+        width: 97%;
+    }
+    #containerid-2{
+        width: 97%;
+    }
+    #containerid-3{
+        width: 97%;
+    }
+}
+
+
